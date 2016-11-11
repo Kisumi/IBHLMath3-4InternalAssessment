@@ -9,14 +9,6 @@ public class QuickSort {
 	private int[] array;
 	private int length;
 
-	static Calendar cal1, cal2;
-	static long startTime;
-
-	public QuickSort() {
-		cal1 = Calendar.getInstance();
-		cal2 = Calendar.getInstance();
-	}
-
 	public void sort(int[] toSort) {
 		if(toSort == null || toSort.length == 0) {
 			return;
@@ -78,11 +70,8 @@ public class QuickSort {
 			input[j] = Integer.parseInt(inputStrings[j]);
 
 		QuickSort sortThis = new QuickSort();
-		startTime = cal1.getTimeInMillis();
 		sortThis.sort(input);
 		for(int i:input)
 			System.out.println(i);
-		long endTime = cal2.getTimeInMillis();
-		System.out.println("Runtime: " + (endTime - startTime));
 	}
 }

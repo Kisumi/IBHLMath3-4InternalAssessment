@@ -10,14 +10,6 @@ public class MergeSort {
 	private int[] mergeArray;
 	private int length;
 
-	static Calendar cal1, cal2;
-	static long startTime;
-
-	public MergeSort() {
-		cal1 = Calendar.getInstance();
-		cal2 = Calendar.getInstance();
-	}
-
 	public void sort(int toSort[]) {
 		array = toSort;
 		length = toSort.length;
@@ -82,11 +74,8 @@ public class MergeSort {
 			input[j] = Integer.parseInt(inputStrings[j]);
 
 		MergeSort sortThis = new MergeSort();
-		startTime = cal1.getTimeInMillis();
 		sortThis.sort(input);
 		for(int i:input)
 			System.out.println(i);
-		long endTime = cal2.getTimeInMillis();
-		System.out.println("Runtime: " + (endTime - startTime));
 	}
 }

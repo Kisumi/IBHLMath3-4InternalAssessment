@@ -6,9 +6,6 @@ import java.io.FileNotFoundException; //in case the user screws up
 
 public class InsertionSort {
  
-	static Calendar cal1, cal2;
-	static long startTime;
-
 	public static int[] insertionSort(int[] input) {
 		int temp;
 		for(int i = 1; i < input.length; i++) {
@@ -44,12 +41,7 @@ public class InsertionSort {
 			input[j] = Integer.parseInt(inputStrings[j]);
 
 		int[] output = insertionSort(input);
-		cal1 = Calendar.getInstance();
-		cal2 = Calendar.getInstance();
-		startTime = cal1.getTimeInMillis();
 		for(int i:output)
 			System.out.println(i);
-		long endTime = cal2.getTimeInMillis();
-		System.out.println("Runtime: " + (endTime - startTime));
 	}
 }
