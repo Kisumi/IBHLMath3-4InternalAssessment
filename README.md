@@ -1,5 +1,4 @@
 # IB HL Math 3-4: Internal Assessment
-## Elaine Yang
 
 	>>> This is where I have compiled the source code for quicksort, merge sort, and insertion sort.
 	>>> They only demonstrate the algorithm, since what I am testing for is algorithm efficiency. Don't expect a fancy GUI or anything.
